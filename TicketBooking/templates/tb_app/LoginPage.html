@@ -1,0 +1,88 @@
+{% load static%}
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/loginPage.css' %}">
+
+</head>
+<body>
+    <div style="backdrop-filter: blur(2px);">
+    <div class="homeicon">
+        <form id="homeicon" name="" method="Get" Action="">
+          <a href="/MainPage/"> <img src="{%static 'image/Payment/homeIcon.png' %}" width="50" height="50"></a>  
+          
+        </form>
+    </div>
+<div class="container">
+
+    <form action="">
+       
+        <div class="row">
+
+            <div class="imagelog">
+                <img class="imagelog-1" src="{% static 'image/LoginPage/Login.png' %}" alt="hhh">
+                </div>
+          
+                <div class=" saker">
+                             <div class="saker-left">
+                                <div class="col">
+
+                                    <h3 class="title">sign up</h3>
+
+                                        <div class="inputBox">
+                                            <span>Name</span>
+                                            <input type="text" placeholder="Name">
+                                        </div>
+                                            <div class="inputBox">
+                                                <span>Email address </span>
+                                                <input type="email" placeholder="example@example.com">
+                                                </div>
+                                            <div class="inputBox">
+                                            <span>Password</span>
+                                            <input type="password" placeholder="Password">
+                                            </div>
+                                            <div class="inputBox">
+                                                <input type="submit" value="sign up" class="submit-btn">
+                                            </div>
+                            </div>
+                
+                     </div>
+                     <div class="saker-right">
+                        <div class="col">
+                            <div class="divider"></div>
+                            <h3 class="title">Log In</h3>
+
+                        
+                                <div class="inputBox">
+                                    <span>Email address</span>
+                                    <input type="email" placeholder="example@example.com">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Password</span>
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <div class="inputBox">
+                                    <input type="submit" value="Log in" class="submit-btn">
+                                </div>
+
+                        </div>
+                    </div>
+    
+             </div>
+            </div>
+
+       
+    </form>
+</div>
+</div>    
+    
+</body>
+
+</html>
+{% endblock content%}
